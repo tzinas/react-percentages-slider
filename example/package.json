@@ -10,10 +10,12 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "lodash": "^4.17.20",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
+    "react-percentages-slider": "file:..",
     "react-scripts": "file:../node_modules/react-scripts",
-    "react-percentages-slider": "file:.."
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
