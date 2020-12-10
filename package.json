@@ -5,6 +5,15 @@
   "author": "tzinas",
   "license": "MIT",
   "repository": "tzinas/react-percentages-slider",
+  "keywords": [
+    "slider",
+    "percentages",
+    "react",
+    "percentages slider",
+    "divisions",
+    "divisions slider",
+    "react slider"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
