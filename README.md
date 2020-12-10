@@ -16,6 +16,7 @@ npm install --save react-percentages-slider
 ## Usage
 
 ```jsx
+import React, {useState} from 'react'
 import PercentagesSlider from 'react-percentages-slider'
 
 const App = () => {
