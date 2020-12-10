@@ -20,13 +20,13 @@ import React, {useState} from 'react'
 import PercentagesSlider from 'react-percentages-slider'
 
 const App = () => {
-  const [expenses, setExpenses] = useState([
-    { text: "House", color:"#e9c46a", percentage: 28 },
-    { text: "Car", color: "#e76f51", percentage: 39 },
-    { text: "Food", color:"#2a9d8f", percentage: 25 },
-    { text: "Entertainment", color:"#2a7c9d", percentage: 17 }])
+  const [example, setExample] = useState([
+    { text: "Item 1", color:"#e9c46a", percentage: 28 },
+    { text: "Item 2", color: "#e76f51", percentage: 39 },
+    { text: "Item 3", color:"#2a9d8f", percentage: 25 },
+    { text: "Item 4", color:"#2a7c9d", percentage: 17 }])
 
-  return <PercentagesSlider divisions={expenses} setDivisions={setExpenses}/>
+  return <PercentagesSlider divisions={example} setDivisions={setExample}/>
 }
 ```
 
