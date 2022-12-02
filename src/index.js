@@ -83,22 +83,22 @@ const Thumb = ({barRef, divisions, leftIndex, leftColor, rightColor, setDivision
     setDivisions(_.clone(tempDivisions))
   }
 
-  const handleMouseUp = () => {
-    document.removeEventListener('mousemove', handleMouseMove)
-    document.removeEventListener('mouseup', handleMouseUp)
+  const handlePointerUp = () => {
+    document.removeEventListener('pointermove', handleMouseMove)
+    document.removeEventListener('pointerup', handlePointerUp)
   }
 
-  const handleMouseDown = event => {
+  const handlePointerDown = event => {
     oldX = event.clientX
     oldPercentages.left = divisions[leftIndex].percentage
     oldPercentages.right = divisions[rightIndex].percentage
 
-    document.addEventListener('mousemove', handleMouseMove)
-    document.addEventListener('mouseup', handleMouseUp)
+    document.addEventListener('pointermove', handleMouseMove)
+    document.addEventListener('pointerup', handlePointerUp)
   }
 
   return (
-    <SlideThumb onMouseDown={handleMouseDown} style={{borderLeftColor: leftColor, borderRightColor: rightColor}} />
+    <SlideThumb onPointerDown={handlePointerDown} style={{borderLeftColor: leftColor, borderRightColor: rightColor }} />
   )
 }
 
